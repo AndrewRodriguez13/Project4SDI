@@ -102,3 +102,34 @@
     }
 
    }:
+
+// #4 Title-case a string (split into words, then uppercase the first letter of each word).
+  // Variables:
+  var Cocacola = function(Cocacola);
+  var UpperCaseFirstWord = "Coca";
+  var UpperCaseSecondWord = "Cola";
+  var Coke = "CocaCola";
+  var split = "Coca-Cola";
+
+
+  // Confirm("we are going to split the string into two words and capitalize the frist letter of each word")
+
+  // OutPut
+
+  console.log(coke + "is now going to be split into two words");
+  console.log("it is now view has" + split);
+  console.log("next to capitalize the letter c which then becomes" + UpperCaseFirstWord);
+  console.log("the second word will be capitalized as well" + UpperCaseSecondWord);
+  console.log("the string will now look like this" + split);
+
+  // #5 Find the number of hours or days difference between two dates.
+     var Mybirthday = "September 13th 2014";
+     var TodaysDate = "February 27th 2014";
+     var Time = "Days"
+     var Total days = 198;
+     var Month1 = 30;
+     var month2 = 31;
+
+     console.log("the diffrence in days between" + Mybirthday + "And" + TodaysDate);
+     console.log(Month1 * 3 + month2 * 4 + 1);
+     console.log(Total days);
