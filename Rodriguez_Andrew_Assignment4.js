@@ -57,3 +57,48 @@
     }
 
   };
+
+  // #3 Is the string a URL? (Does it start with http: or https:?)
+   var UniformResourceLocator = function(URL) {
+   var ColonMark = Url.indexOf(":");
+   var Secure = Url.lastIndexOf("s");
+
+   // Url borken into sections
+   // http:
+
+   var FirstPart = Url.substring(0 +4, ColonMark);
+   var SecondPart = Url.substring(ColonMark, Url.length);
+
+   // https:
+
+   var FirstPart = Url.substring(0 +5, ColonMark);
+   var SecondPart = Url.substring(ColonMark, Secure);
+   var ThirdPart = Url.substring(Secure, Url.length);
+
+   // Check for the http: and https: to confirm that the string is a url.
+
+   if (ColonMark) {
+    // Check Length
+    if (FirstPart.length === 4 & SecondPart.length === 5);
+    return true;
+  } else {
+    return false;
+  }
+    } else {
+      return false;
+    }
+
+   };
+
+   if (ColonMark & Secure) {
+    //Check Length
+    if (FirstPart.length === 5 & SecondPart.length === 6);
+    return true;
+  } else {
+    return false;
+  }
+    } else {
+      return false;
+    }
+
+   }:
