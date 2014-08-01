@@ -31,3 +31,29 @@
    }
 
 };
+
+// #2 Does a string follow an aaa@bbb.ccc pattern like an email address?
+   var EmailAddress = function(EmailAddress) {
+   var AtSymbol = EmailAddress.indexOf("@");
+   var Dot = EmailAddress.lastIndexOf(".");
+
+   // EmailAddress borken into sections
+
+   var FirstPart = EmailAddress.substring(0, AtSymbol);
+   var SecondPart = EmailAddress.substring(AtSymbol +1, Dot);
+   var ThirdPart = EmailAddress.substring(Dot +1, EmailAddress.length);
+
+   // Check for the At Symbol and Dot in an EmailAddress
+
+   if (AtSymbol & Dot) {
+    // Check Length
+    if (FirstPart.length === 4 & SecondPart.length === 8 & ThirdPart.length === 12)
+      return true;
+  } else {
+    return false;
+  }
+    } else {
+      return false;
+    }
+
+  };
